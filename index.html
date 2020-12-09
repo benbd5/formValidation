@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Validation form</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <p>Inscrivez-vous ci dessous</p>
+
+        <form>
+            <div class="user-form">
+                <label for="userName">Nom d'utilisateur</label>
+                <input type="text" id="userName" placeholder="Nom d'utilisateur" maxlength="24">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-times-circle"></i>
+                <span class="message-alert">3 caractères minimum et 24 maximum</span>
+
+            </div>
+            <div class="user-form">
+                <label for="userMail">Entrez votre mail</label>
+                <input type="email" id="userMail" placeholder="Entrez votre mail">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-times-circle"></i>
+                <span class="message-alert">Saisissez un email valide.</span>
+
+            </div>
+            <div class="user-form">
+                <label for="userMdp">Mot de passe</label>
+                <input type="password" id="userMdp" placeholder="Mot de passe" minlength="8">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-times-circle"></i>
+                <span class="message-alert">Un symbole, une minuscule, un chiffre
+                    et 8 caractères</span>
+                <div class="ligne">
+                    <div class="l1">
+                        <span>Faible</span>
+                    </div>
+                    <div class="l2">
+                        <span>Moyen</span>
+                    </div>
+                    <div class="l3">
+                        <span>Fort</span>
+                    </div>
+                </div>
+            </div>
+            <div class="user-form">
+                <label for="userConfirmMdp">Confirmer le mot de passe</label>
+                <input type="password" id="userConfirmMdp" placeholder="Confirmer le mot de passe">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-times-circle"></i>
+                <!-- <span class="message-alert">Le mot de passe est différent</span> -->
+            </div>
+            <div class="user-form">
+                <!-- <input type="submit" value="Inscription"> -->
+                <button>Inscription</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+<script src="./app.js"></script>
+
+</html>

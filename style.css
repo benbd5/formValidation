@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    background: rgb(42, 40, 40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.container {
+    flex-shrink: 0;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.user-form {
+    position: relative;
+}
+
+label {
+    display: block;
+    position: relative;
+    margin: 5px 23px;
+    padding: 10px 0 5px 0;
+}
+
+input {
+    display: block;
+    margin: 10px 20px 20px 20px;
+    padding: 10px 12px;
+    background: rgb(235, 235, 235);
+    border: 0;
+    border-radius: 3px;
+    padding: 10px 12px;
+    border: 1px solid black;
+    width: 420px;
+}
+
+.fa-check-circle,
+.fa-times-circle {
+    position: absolute;
+    font-size: 25px;
+    right: 27px;
+    top: 50px;
+    display: none;
+
+}
+
+.fa-check-circle {
+    color: green;
+}
+
+.fa-times-circle {
+    color: red;
+}
+
+.message-alert {
+    margin: 0 23px;
+    color: crimson;
+    display: none;
+}
+
+button {
+    display: block;
+    margin: 30px auto;
+    outline: 0;
+    background-color: rgb(126, 172, 172);
+    border: 0;
+    padding: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 90%;
+}
+
+.ligne {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.l1,
+.l2,
+.l3 {
+    width: 30%;
+    height: 5px;
+    margin: 15px 5px 20px;
+    position: relative;
+    display: none;
+}
+
+.l1 {
+    background: rgb(184, 111, 111);
+}
+
+.l2 {
+    background: rgb(220, 223, 58);
+}
+
+.l3 {
+    background: green;
+}
+
+.ligne span {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+}
